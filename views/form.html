@@ -1,0 +1,37 @@
+<!doctype.html>
+<html>
+    
+    <body>
+        <form  ng-app="infoApp" name="myForm" novalidate>
+         <h1>Personal Information</h1>
+            <div>
+                <table>
+                    <tr>
+                          <td><strong>First Name:</strong></td>
+                          <td><input type="text" ng-model="firstname" name="firstname" id="Fname" required></td>
+                    </tr>
+                   
+                      <tr>
+				          <td><strong>Last Name:</strong></td>
+                          <td><input type="text"  ng-model="lastname" name="lastname" id="Lname" required></td>
+				      </tr>
+                    
+                        <tr>
+				             <td><strong>Address:</strong></td>
+				             <td><input type="text"  ng-model="address" name="address" id="addr" required></td>
+				        </tr>
+                    
+                           <tr>
+				              <td><strong>Phone Number:</strong></td>
+				              <td><input type="text" ng-model="phonenum" name="phonenum" id="pnum" required></td><br>
+				           </tr>
+                    
+                             <tr>
+                                 <td><input type="SUBMIT" ng-disabled="myForm.user.$invalid"></td>
+				             </tr>
+                    
+                </table>
+            </div>
+            </form>
+    </body>
+</html>
